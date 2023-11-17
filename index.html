@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <!-- link styles.css file -->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+    <!-- Flexbox in a header for style (similar to the header here on CodePen) -->
+        <header>
+            <a href="#" id="logo" aria-label="visit the a.s.u. home page"><img src="https://assets.codepen.io/1351055/asu-logo.png" alt=""></a>
+            <h1>Arizona State University</h1>
+            <nav>
+                <h2 class="sr-only">Main Navigation</h2>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Degree Programs</a></li>
+                    <li><a href="#">Apply</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+        <!-- 	hero image, not really part of any specific content -->
+            <img src="https://assets.codepen.io/1351055/HomepageHero-Antarcia1.jpg" alt="a group of scientists in snowsuits, surrounded by glaciers and water plus a couple of penguins" id="hero">
+            <section id="searchASU">
+                <h2 class="sr-only">Find Your Degree Program or Search By Student Type</h2>
+                <div>
+                    <section id="degreeSearch">
+                        <h3><span class="goldHeading">Find My Degree Program</span></h3>
+                        <form>
+                            <label for="keywordSearch">Keyword Search</label>
+                            <input type="search" name="keywordSearch" id="keywordSearch" placeholder="Enter keywords" required>
+                            <label for="interest">Interest Area</label>
+                            <select name="interest" id="interest" required>
+                                <option value="">Select One...</option>
+                                <option value="architecture">Architecture &amp; Construction</option>
+                                <option value="arts">Arts</option>
+                                <option value="business">Business</option>
+                                <option value="communication">Communication &amp; Media</option>
+                                <option value="computing">Computing &amp; Mathematics</option>
+                                <option value="education">Education &amp; training</option>
+                                <option value="engineering">Engineering &amp; Technology</option>
+                                <option value="entrepreneur">Entrepreneurship</option>
+                                <option value="explore">Exploratory</option>
+                                <option value="health">Health &amp; Wellness</option>
+                                <option value="humanities">Humanities</option>
+                                <option value="idStudies">Interdisciplinary Studies</option>
+                                <option value="law">Law, Justice &amp; Public Service</option>
+                                <option value="science">Science</option>
+                                <option value="socialScience">Social &amp; Behavioral Sciences</option>
+                                <option value="sustain">Sustainability</option>
+                                <option value="stem">STEM</option>
+        </select>
+                            <fieldset>
+                                <legend>Degree Type</legend>
+                                <input type="radio" name="degreeType" id="undergrad" checked required>
+                                <label for="undergrad">Undergraduate</label>
+                                <input type="radio" name="degreeType" id="grad">
+                                <label for="grad">Graduate</label>
+                            </fieldset>
+                            <input type="submit" name="mySubmit" id="mySubmit">
+                        </form>
+                    </section>
+                    <section id="awards">
+                    <h3 class="sr-only">Awards Given to A.S.U.</h3>
+                    <img src="https://assets.codepen.io/1351055/2022-innovation.jpg" alt="A.S.U. is ranked number 1 in the U.S. for innovation, ahead of M.I.T. and Stanford, but U.S. News and World Report">
+                    </section>
+                    <section id="futureStudent">
+                    <h3><span class="goldHeading">I am a Future:</span></h3>
+                    <a href="#">First-year Student</a>
+                    <a href="#">Transfer Student</a>
+                    <a href="#">Graduate Student</a>
+                    <a href="#">International Student</a>
+                    <a href="#">Veteran Student</a>
+                    <a href="#">Non-degree Student</a>
+                    <a href="#">Online Student</a>
+                </section>
+                </div>
+            </section>
+            <section id="charter">
+                <h2>The ASU Difference:</h2>
+                <q>We are measured not by whom we <span class="yellow">exclude</span>, but by whom we <span class="yellow">include</span> and how they <span class="yellow">succeed</span></q>
+                <cite>--Excerpt from <a href="https://www.asu.edu/about/charter-mission-and-values">ASU Charter</a></cite>
+            </section>
+            <section id="experienceASU">
+                <h2 class="sr-only">The ASU Experience</h2>
+                <div id="academics">
+                    <h3>Experience world-class academics</h3>
+                </div>
+                <div id="discovery">
+                    <h3>Discovery and innovation that serves the public</h3>
+                </div>
+                <div id="learners">
+                    <h3>Serving learners at every stage of life</h3>
+                </div>
+            </section>
+            <section id="excellence">
+                <h2><span class="goldHeading">Stories of Excellence</span></h2>
+                <div>
+                    <section>
+                    <img src="https://assets.codepen.io/1351055/quantum_networking_story_hero.jpg" alt="">
+                    <h3>Helping to build the future of the internet</h3>
+                    <p>ASU is collaborating with Cisco, the Oak Ridge National Laboratory and others to design a Quantum Networking Lab to create computer systems that deliver information faster and more securely.</p>
+        </section>
+                    <section>
+                        <img src="https://assets.codepen.io/1351055/homepagebox-youtubecrashcourse.jpg" alt="">
+                        <h3>Innovating to make college more accessible</h3>
+                        <p>Thanks to a new collaboration between ASU, YouTube and Crash Course, students can take college courses on YouTube and earn low-cost credit that transfers to hundreds of colleges and universities.</p>
+        </section>
+                    <section>
+                        <img src="https://assets.codepen.io/1351055/homepagebox-plastictohydrogen.jpg" alt="">
+                        <h3>New partnership with Clean-Seas to create plastic-to-hydrogen facility</h3>
+                        <p>The first-of-its-kind hydrogen facility will convert plastic waste into clean hydrogen to bring sustainable energy to Arizona.</p>
+        </section>
+                    <section>
+                        <img src="https://assets.codepen.io/1351055/homepagebox-engineeringabetterworld.jpg" alt="">
+                        <h3>Engineering a better world</h3>
+                        <p>Students in ASU’s Engineers Without Borders are receiving mentorship and applying the skills they’re learning to projects that are positively impacting people around the world.</p>
+                    </section>
+                    <section>
+                        <img src="https://assets.codepen.io/1351055/Homepagebox-Xray.jpg" alt="">
+                        <h3>ASU professor using X-rays to discover new knowledge</h3>
+                        <p>The director of an unprecedented ASU lab aims to use X-ray technology to advance scientific efforts in areas such as drug development and renewable energy.</p>
+                    </section>
+                    <section>
+                        <img src="https://assets.codepen.io/1351055/Homepagebox-ThunderbirdStudio.jpg" alt="">
+                        <h3>Hollywood-style technology comes to the classroom</h3>
+                        <p>A revolutionary lab at ASU’s Thunderbird School of Global Management is using holograms and augmented reality to advance the way students learn.</p>
+        </section>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section id="social">
+                <img src="https://assets.codepen.io/1351055/ASU-EndorsedLogo.png" alt="A black and white version of the A.S.U. logo that includes the words Arizona State University">
+                <h2 class="sr-only">ASU on Social Media</h2>
+                <div>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter-square"></i></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram-square"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube-square"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </section>
+            <section id="location">
+                <h2 class="sr-only">A.S.U. Maps and Contact Information</h2>
+                <div>
+                    <a href="#">Maps and Locations</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">Directory</a>
+                    <a href="#">Contact ASU</a>
+                    <a href="#">MyASU</a>
+                </div>
+                <img src="https://assets.codepen.io/1351055/footer-image.png" alt="Number 1 in the U.S. for innovation, A.S.U. ahead of M.I.T. and Stanford rated by U.S. News and World Report, 7 years, 2016-2022">
+            </section>
+            <section id="terms">
+                <h2 class="sr-only">A.S.U. terms of use and privacy information</h2>
+                <div>
+                    <a href="#">Copyright and Trademark</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Emergency</a>
+                </div>
+            </section>
+        </footer>
+    </body>
+</bodhtmly>

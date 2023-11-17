@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+:root{
+	--maroon: #8c1d40;
+	--gold: #ffc627;
+	--blue: #00a3e0;
+	--green: #78be20;
+	--orange: #ff7f32;
+	--gray: #5c6670;
+	--light-gray: #eaeaea;
+	--medium-gray: #747474;
+	--dark-gray: #222;
+	font-size: 16px;
+	font-family: Roboto, Arial, sans-serif;
+	box-sizing: border-box;
+}
+
+body{
+	line-height: 1.25;
+	color: var(--dark-gray);
+}
+
+header{
+	width: 100%;
+/* TO DO: FLEX DISPLAY */
+	padding: 1rem 0;
+	background-color: var(--light-gray);
+	
+}
+
+#logo{
+	padding: 0;
+}
+
+header img{
+	display: block;
+	width: 100%;
+	max-width: 150px;
+	margin: 0 auto;
+}
+
+a{
+	display: block;
+	padding: 1rem;
+	color: var(--maroon);
+}
+
+h1, h2, h3, h4{
+	font-weight: bold;
+}
+
+h1{
+	font-size: 1.65rem;
+	margin: 0.5rem 0;
+	text-align: center;
+}
+
+h2{
+	font-size: 1.45rem;
+	margin: 0.5rem 0;
+}
+
+h3{
+	font-size: 1.35rem;
+	margin: 1rem auto;
+}
+
+/* For content that needs to be hidden but still accessible, see https://webaim.org/techniques/css/invisiblecontent/ for more information */
+.sr-only{
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+nav li{
+	background-color: var(--gold);
+}
+
+nav a{
+	text-align: center;
+	color: var(--dark-gray);
+	text-decoration: none;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 1.15rem;
+}
+
+img{
+	display: block;
+	width: 100%;
+}
+
+main{
+	width: 100%;
+}
+
+#hero{
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+#searchASU{
+	background-image: url("https://assets.codepen.io/1351055/TopoPatternWhite.png");
+	width: 100%;
+}
+
+#searchASU h3{
+	text-align: left;
+}
+
+.goldHeading, .yellow{
+	background: var(--gold);
+	padding: 0 0.25rem;
+}
+
+#searchASU div{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+#degreeSearch, #futureStudent{
+	background-color: white;
+	padding: 2rem;
+}
+
+#awards{
+	background-color: var(--gold);
+}
+
+label{
+	display: block;
+	margin-bottom: 0.5rem;
+	font-weight: bold;
+}
+
+input, select{
+	display: block;
+	width: 100%;
+	margin-bottom: 2rem;
+	padding: 1rem;
+	height: 3rem;
+}
+
+fieldset{
+/* TO DO: FLEX DISPLAY */
+	margin: 1rem auto;
+}
+
+legend{
+	font-weight: bold;
+	flex-grow: 1;
+}
+
+fieldset label, fieldset input{
+	display: inline-block;
+	margin: 0.75rem 0;
+	color: var(--dark-gray);
+	font-weight: normal;
+}
+
+fieldset label{
+/* TO DO: FLEX DISPLAY */
+}
+
+fieldset input{
+	height: 1.5rem;
+/* TO DO: FLEX DISPLAY */
+}
+
+input[type=submit]{
+	display: inline-block;
+	color: white;
+	font-weight: bold;
+	font-size: 1.15rem;
+	background-color: var(--maroon);
+	padding: 0.5rem;
+	border-radius: 4000rem;
+	border: none;
+	width: 50%;
+}
+
+#futureStudent a{
+	color: var(--dark-gray);
+	text-decoration: none;
+}
+
+p, q{
+	max-width: 70ch;
+}
+
+#charter{
+	width: 80%;
+	max-width: 1070px;
+	margin: 2rem auto;
+}
+
+#charter h2{
+	font-size: 1rem;
+	text-align: left;
+	color: var(--medium-gray);
+}
+
+#charter q{
+	font-size: 2.25rem;
+	font-weight: bold;
+	display: block;
+	margin: 1rem 0;
+	line-height: 1.35;
+}
+
+#charter a{
+	display: inline;
+	padding: 0;
+	color: var(--dark-gray);
+}
+
+#experienceASU{
+	margin-top: 4rem;
+}
+
+#experienceASU div{
+	max-width: 400px;
+	height: 600px;
+	margin: 0 auto 2rem auto;
+}
+
+#academics{
+	background-image: url("https://assets.codepen.io/1351055/AE-pillar-RichaTeaching.jpg");
+	background-size: cover;
+	max-width: 400px;
+	max-height: 600px;
+	position: relative;
+	z-index: -2;
+}
+
+#academics::before{
+	content: "";
+	background-image: linear-gradient(to top,rgba(25,25,25,0.75) 0%,rgba(25,25,25,0) 100%);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+#discovery{
+	background-image: url("https://assets.codepen.io/1351055/KE-pillar-macroTech_0.jpg");
+	max-width: 400px;
+	max-height: 600px;
+	position: relative;
+	z-index: -2;
+}
+
+#discovery::before{
+	content: "";
+	background-image: linear-gradient(to top,rgba(25,25,25,0.75) 0%,rgba(25,25,25,0) 100%);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+#learners{
+	background-image: url("https://assets.codepen.io/1351055/LE-pillar-online.jpg");
+	max-width: 400px;
+	max-height: 600px;
+	position: relative;
+	top: 0;
+	z-index: -1;
+}
+
+#learners::before{
+	content: "";
+	background-image: linear-gradient(to top,rgba(25,25,25,0.75) 0%,rgba(25,25,25,0) 100%);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+#experienceASU h3{
+	font-size: 2.5rem;
+	color: white;
+	text-align: left;
+	width: 80%;
+	max-width: 400px;
+	margin: 0 auto;
+	padding-left: 2rem;
+	position: relative;
+	z-index: 2;
+	top: 40%;
+}
+
+#excellence{
+	width: 100%;
+	margin: 4rem auto;
+}
+
+#excellence h2{
+	font-size: 1.65rem;
+	max-width: 1300px;
+	margin: 0 auto 1rem 2rem;
+}
+
+#excellence section{
+	padding: 1rem;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+#excellence h3, #excellence p{
+	width: 80%;
+	padding: 1rem 1rem 0 1rem;
+	margin: 0 auto;
+	background-color: white;
+	position: relative;
+	top: -2rem;
+}
+
+footer img{
+	max-width: 350px;
+	margin: 0 auto;
+}
+
+#social{
+	background-color: black;
+	padding: 2rem 1rem;
+}
+
+#social div{
+	width: 90%;
+	margin: 1rem auto;
+}
+
+#social a{
+	color: white;
+	font-size: 2.5rem;
+	display: inline-block;
+	padding: 0.5rem;
+}
+
+#location div, #terms div{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.25rem;
+}
+
+#location a:nth-child(even), #terms a:nth-child(even){
+	justify-self: end;
+}
+
+#location{
+	background-color: var(--gold);
+	padding: 2rem 1rem;
+}
+
+#location a{
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+	font-size: 1.1rem;
+}
+
+#terms{
+	background-color: var(--light-gray);
+	padding: 2rem 1rem;
+}
+
+#terms a{
+	color: black;
+	text-decoration: none;
+	font-size: 1.1rem;
+}
+
+@media (hover: hover){
+	h1:hover{
+		text-decoration: underline;
+	}
+	
+	nav a:hover{
+		background-color: var(--maroon);
+		color: white;
+	}
+
+	input[type=submit]:hover{
+		transform: scale(1.05);
+	}
+	
+	#futureStudent a:hover{
+		color: var(--maroon);
+		text-decoration: underline;
+	}
+	
+	#charter a:hover{
+		text-decoration: none;
+	}
+	
+	#social a:hover{
+		color: var(--gold);
+	}
+	
+	#location a:hover{
+		text-decoration: underline;
+	}
+	
+	#terms a:hover{
+		text-decoration: underline;
+	}
+	
+}
+
+@media screen and (min-width: 600px){
+	header{
+/* TO DO: FLEX DISPLAY */
+	}
+	
+	header img{
+		margin: 0 1em;
+	}
+	
+	h1{
+		margin: 0;
+		font-size: 2em;
+/* TO DO: FLEX DISPLAY */
+	}
+	
+	nav{
+		margin-top: 1em;
+/* TO DO: FLEX DISPLAY */
+		background-color: var(--gold);
+	}
+	
+	nav ul{
+/* TO DO: FLEX DISPLAY */
+	}
+	
+	#excellence div{
+/* TO DO: FLEX DISPLAY */
+	}
+	
+	#excellence section{
+		width: 50%;
+		margin: 2rem 0;
+	}
+}
+
+@media screen and (min-width: 675px){
+		#searchASU div{
+/* TO DO: FLEX DISPLAY */
+		width: 100%;
+		padding: 2rem 0;
+	}
+	
+	#searchASU section{
+		max-width: 350px;
+	}
+}
+
+@media screen and (min-width: 858px){
+	header{
+/* TO DO: FLEX DISPLAY */
+	}
+	
+	h1{
+		text-align: left;
+/* TO DO: FLEX DISPLAY */
+	}
+	
+	nav{
+		max-width: 450px;
+	}
+	
+	nav, nav ul, nav li{
+		background-color: var(--light-gray);
+	}
+	
+	nav a{
+		font-weight: normal;
+		letter-spacing: normal;
+		padding: 1em 1em 0.25em 1em;
+	}
+	
+	nav a:hover, .active{
+		background-color: var(--light-gray);
+		color: var(--dark-gray);
+		text-decoration: none;
+		border-bottom: 0.5rem solid var(--gold);
+	}
+	
+	#searchASU{
+		padding: 5rem 0;
+	}
+	
+	#charter h2{
+		font-size: 1.25rem;
+	}
+	
+	#charter q{
+		font-size: 4rem;
+	}
+	
+	#experienceASU{
+/* TO DO: FLEX DISPLAY */
+		padding: 2rem;
+	}
+	
+	#experienceASU div{
+		max-width: 400px;
+/* TO DO: FLEX DISPLAY */
+		width: 33%;
+		margin: 0;
+	}
+	
+	#excellence h2{
+		font-size: 1.8rem;
+	}
+	
+	#excellence section{
+		width: 33%;
+		margin: 0;
+	}
+}
+
+@media screen and (min-width: 1000px){
+	footer img{
+		margin: 1rem 0;
+	}
+	
+	#social, #location{
+/* TO DO: FLEX DISPLAY */
+	}
+	
+	#social div, #location div, #terms div{
+/* TO DO: FLEX DISPLAY */
+		margin: 1rem 0;
+	}
+	
+	#social div{
+		margin-right: 1rem;
+	}
+	
+	#location div{
+/* TO DO: FLEX DISPLAY */
+	}
+}
+
+@media screen and (min-width: 1201px){
+	#experienceASU div{
+		margin: 0 1rem;
+	}
+	
+	#social, #location, #terms{
+		padding: 2rem 10%;
+	}
+}
