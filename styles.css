@@ -18,14 +18,22 @@
 body{
 	line-height: 1.25;
 	color: var(--dark-gray);
+    margin:0;
 }
 
 header{
 	width: 100%;
-/* TO DO: FLEX DISPLAY */
+    /* TO DO: FLEX DISPLAY */
+    display: flex;
+    flex-direction: column;
+
 	padding: 1rem 0;
 	background-color: var(--light-gray);
-	
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
 }
 
 #logo{
@@ -147,6 +155,8 @@ input, select{
 fieldset{
 /* TO DO: FLEX DISPLAY */
 	margin: 1rem auto;
+    border-width: 0;
+    display: flex;
 }
 
 legend{
@@ -163,11 +173,15 @@ fieldset label, fieldset input{
 
 fieldset label{
 /* TO DO: FLEX DISPLAY */
+   display: flex;
+   align-items: center;
+   margin-right: 30px;
 }
 
 fieldset input{
 	height: 1.5rem;
 /* TO DO: FLEX DISPLAY */
+    width: 40px;
 }
 
 input[type=submit]{
@@ -417,6 +431,9 @@ footer img{
 @media screen and (min-width: 600px){
 	header{
 /* TO DO: FLEX DISPLAY */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
 	}
 	
 	header img{
@@ -427,20 +444,37 @@ footer img{
 		margin: 0;
 		font-size: 2em;
 /* TO DO: FLEX DISPLAY */
+        display: flex;
+        align-items: end;
 	}
 	
 	nav{
 		margin-top: 1em;
 /* TO DO: FLEX DISPLAY */
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
 		background-color: var(--gold);
 	}
 	
 	nav ul{
 /* TO DO: FLEX DISPLAY */
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: nowrap;
 	}
 	
 	#excellence div{
 /* TO DO: FLEX DISPLAY */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
 	}
 	
 	#excellence section{
@@ -452,6 +486,7 @@ footer img{
 @media screen and (min-width: 675px){
 		#searchASU div{
 /* TO DO: FLEX DISPLAY */
+        display: flex;
 		width: 100%;
 		padding: 2rem 0;
 	}
@@ -464,15 +499,23 @@ footer img{
 @media screen and (min-width: 858px){
 	header{
 /* TO DO: FLEX DISPLAY */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: start;
 	}
 	
 	h1{
 		text-align: left;
 /* TO DO: FLEX DISPLAY */
+        display: flex;
+        align-items: center;
 	}
 	
 	nav{
+        margin-top: 0;
 		max-width: 450px;
+        margin-left: auto;
 	}
 	
 	nav, nav ul, nav li{
@@ -506,14 +549,18 @@ footer img{
 	
 	#experienceASU{
 /* TO DO: FLEX DISPLAY */
-		padding: 2rem;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        padding: 2rem;
+        justify-content: center;
 	}
 	
 	#experienceASU div{
 		max-width: 400px;
 /* TO DO: FLEX DISPLAY */
-		width: 33%;
-		margin: 0;
+		margin-bottom: 20px;
+        width: 30%;
 	}
 	
 	#excellence h2{
@@ -533,6 +580,9 @@ footer img{
 	
 	#social, #location{
 /* TO DO: FLEX DISPLAY */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
 	}
 	
 	#social div, #location div, #terms div{
@@ -542,10 +592,14 @@ footer img{
 	
 	#social div{
 		margin-right: 1rem;
+        display: flex;
+        justify-content: end;
 	}
 	
 	#location div{
 /* TO DO: FLEX DISPLAY */
+display: flex;
+
 	}
 }
 
